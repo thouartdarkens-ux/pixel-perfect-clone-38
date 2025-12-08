@@ -60,18 +60,7 @@ export const TestimonialsSection: React.FC = () => {
           role="presentation"
         />
         
-        <header className="relative flex items-stretch gap-2 mr-[232px] max-md:mr-2.5">
-          <img
-            src="/images/logo-brand-1.png"
-            alt="Company logo or brand element"
-            className="aspect-[1] object-contain w-[52px] shadow-[0px_0px_0px_1px_rgba(128,128,128,0.5)] shrink-0 rounded-[100px]"
-          />
-          <img
-            src="/images/logo-brand-2.png"
-            alt="Company logo or brand element"
-            className="aspect-[1] object-contain w-[52px] shadow-[0px_0px_0px_1px_rgba(128,128,128,0.5)] shrink-0 rounded-[100px]"
-          />
-        </header>
+        
 
         <main className="relative mb-[-26px] w-full max-w-[1708px] mt-[58px] max-md:max-w-full max-md:mt-10 max-md:mb-2.5">
           <div className="gap-5 flex max-md:flex-col max-md:items-stretch">
