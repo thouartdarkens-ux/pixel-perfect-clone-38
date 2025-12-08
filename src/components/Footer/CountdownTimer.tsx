@@ -52,16 +52,16 @@ const CountdownTimer: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex w-[540px] max-w-full items-stretch gap-5 whitespace-nowrap text-center flex-wrap mt-[41px] max-md:mt-10">
-      {timeLeft.map((unit, index) => (
+    <div className="grid grid-cols-4 w-full max-w-[540px] gap-2 sm:gap-5 text-center mt-6 sm:mt-[41px]">
+      {timeLeft.map((unit) => (
         <div
           key={unit.label}
-          className="bg-[rgba(244,244,244,1)] shadow-[0px_2px_4px_rgba(0,0,0,0.1)] flex flex-col items-center flex-1 px-6 py-[23px] rounded-[10px] max-md:px-5"
+          className="bg-[rgba(244,244,244,1)] shadow-[0px_2px_4px_rgba(0,0,0,0.1)] flex flex-col items-center px-2 sm:px-6 py-3 sm:py-[23px] rounded-lg sm:rounded-[10px]"
         >
-          <div className="text-[rgba(34,34,34,1)] text-2xl font-semibold">
+          <div className="text-[rgba(34,34,34,1)] text-lg sm:text-2xl font-semibold">
             {unit.value}
           </div>
-          <div className="text-[rgba(119,119,119,1)] text-[22px] font-normal mt-4">
+          <div className="text-[rgba(119,119,119,1)] text-sm sm:text-[22px] font-normal mt-1 sm:mt-4">
             {unit.label}
           </div>
         </div>

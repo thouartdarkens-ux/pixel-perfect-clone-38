@@ -23,21 +23,21 @@ const EmailSignup: React.FC = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div className="bg-[rgba(255,255,255,0.33)] border flex w-[560px] max-w-full items-stretch gap-5 text-white font-normal flex-wrap justify-between mt-[37px] pl-[29px] pr-[9px] py-[9px] rounded-[100px] border-white border-solid max-md:pl-5">
+    <form onSubmit={handleSubmit} className="w-full max-w-[560px] px-4 sm:px-0">
+      <div className="bg-[rgba(255,255,255,0.33)] border flex w-full items-center gap-2 sm:gap-5 text-white font-normal flex-col sm:flex-row mt-6 sm:mt-[37px] p-2 sm:pl-[29px] sm:pr-[9px] sm:py-[9px] rounded-2xl sm:rounded-[100px] border-white border-solid">
         <input
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Your email address"
-          className="text-lg tracking-[-0.36px] my-auto bg-transparent border-none outline-none placeholder-white flex-1"
+          className="text-base sm:text-lg tracking-[-0.36px] bg-transparent border-none outline-none placeholder-white flex-1 min-w-0 w-full text-center sm:text-left py-3 sm:py-0"
           required
           aria-label="Email address"
         />
         <button
           type="submit"
           disabled={isSubmitting}
-          className="bg-[rgba(46,32,6,1)] flex flex-col items-stretch text-base text-center leading-none justify-center px-[33px] py-[22px] rounded-[100px] max-md:px-5 hover:bg-[rgba(56,42,16,1)] transition-colors disabled:opacity-50"
+          className="bg-[rgba(46,32,6,1)] w-full sm:w-auto text-sm sm:text-base text-center leading-none px-6 sm:px-[33px] py-4 sm:py-[22px] rounded-xl sm:rounded-[100px] hover:bg-[rgba(56,42,16,1)] transition-colors disabled:opacity-50"
         >
           <div>{isSubmitting ? 'Joining...' : 'Join The Waitlist'}</div>
         </button>
