@@ -112,7 +112,7 @@ function basicinfo() {
                         
                         <div className="mt-4 max-md:ml-[5px] max-md:mr-1.5">
                           <img
-                            src="https://api.builder.io/api/v1/image/assets/8914166e909b4d6f993fbcf0a4c8521a/0d564607e17e18ffdc2b73e7279c8302efec657a?placeholderIfAbsent=true"
+                            src="/images/product-illustration.png"
                             alt="Product illustration"
                             className="aspect-[333.33] object-contain w-full"
                           />
@@ -122,7 +122,7 @@ function basicinfo() {
                       <div className="mt-[130px] max-md:mt-10">
                         <Button
                           type="submit"
-                          icon="https://api.builder.io/api/v1/image/assets/8914166e909b4d6f993fbcf0a4c8521a/0fbddad9e267d19560be1986291d648886cc8f38?placeholderIfAbsent=true"
+                          icon="/images/icon-arrow-right.png"
                         >
                           Next
                         </Button>

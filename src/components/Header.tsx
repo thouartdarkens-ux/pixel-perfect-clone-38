@@ -30,7 +30,7 @@ export const Header: React.FC = () => {
               </span>
             </div>
             <img
-              src="https://api.builder.io/api/v1/image/assets/8914166e909b4d6f993fbcf0a4c8521a/595db568bcd2e9a931079e2e23272924360a7f0c?placeholderIfAbsent=true"
+              src="/images/arrow-indicator.png"
               alt="Arrow indicator"
               className="aspect-[1.8] object-contain w-[9px]"
             />
@@ -61,7 +61,7 @@ export const Header: React.FC = () => {
                 aria-label="Search"
               >
                 <img
-                  src="https://api.builder.io/api/v1/image/assets/8914166e909b4d6f993fbcf0a4c8521a/e3899896124ea1910e8dff093afb482df64f5159?placeholderIfAbsent=true"
+                  src="/images/icon-search.png"
                   alt=""
                   className="aspect-[1] object-contain w-6"
                 />
@@ -71,7 +71,7 @@ export const Header: React.FC = () => {
                 aria-label="Notifications"
               >
                 <img
-                  src="https://api.builder.io/api/v1/image/assets/8914166e909b4d6f993fbcf0a4c8521a/46ed9d8ab069fcc17014efb8744598e96d41de78?placeholderIfAbsent=true"
+                  src="/images/icon-notifications.png"
                   alt=""
                   className="aspect-[1] object-contain w-6 fill-[#28353D]"
                 />
@@ -81,7 +81,7 @@ export const Header: React.FC = () => {
                 aria-label="User menu"
               >
                 <img
-                  src="https://api.builder.io/api/v1/image/assets/8914166e909b4d6f993fbcf0a4c8521a/a8ba384cdf83b7841f265778783a2e067f744a30?placeholderIfAbsent=true"
+                  src="/images/icon-user.png"
                   alt=""
                   className="aspect-[1] object-contain w-6"
                 />

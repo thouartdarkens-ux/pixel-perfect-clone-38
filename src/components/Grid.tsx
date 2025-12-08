@@ -3,22 +3,22 @@ import { Featureboard } from './Featureboard';
 
 const features = [
   {
-    iconSrc: "https://api.builder.io/api/v1/image/assets/8914166e909b4d6f993fbcf0a4c8521a/bcd36d65822fb1edab1aa4a81685405d5a72d498?placeholderIfAbsent=true",
+    iconSrc: "/images/icon-payments.png",
     title: "Optimize payments",
     alt: "Payment optimization icon"
   },
   {
-    iconSrc: "https://api.builder.io/api/v1/image/assets/8914166e909b4d6f993fbcf0a4c8521a/f1d796b62ef334bb31cd1e470271667b11144757?placeholderIfAbsent=true",
+    iconSrc: "/images/icon-revenue.png",
     title: "Grow your revenue",
     alt: "Revenue growth icon"
   },
   {
-    iconSrc: "https://api.builder.io/api/v1/image/assets/8914166e909b4d6f993fbcf0a4c8521a/551bdfe53de4d3e2ca57ac302bb5098007a19eea?placeholderIfAbsent=true",
+    iconSrc: "/images/icon-mobile.png",
     title: "Shop on the go",
     alt: "Mobile shopping icon"
   },
   {
-    iconSrc: "https://api.builder.io/api/v1/image/assets/8914166e909b4d6f993fbcf0a4c8521a/edf6dc71753b3a6d122aeb460f1ac8a8b34b8446?placeholderIfAbsent=true",
+    iconSrc: "/images/icon-security.png",
     title: "Put security first",
     alt: "Security icon"
   }

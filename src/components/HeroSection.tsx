@@ -13,12 +13,12 @@ export function HeroSection({ }: HeroSectionProps) {
   return (
     <section className="flex flex-col relative min-h-[1104px] w-full overflow-hidden rounded-[44px] max-md:max-w-full">
       <img
-        src="https://api.builder.io/api/v1/image/assets/8914166e909b4d6f993fbcf0a4c8521a/406c52f6857a718090561a94deb2ae91cde1d731?placeholderIfAbsent=true"
+        src="/images/main-hero-bg.png"
         alt="Hero background"
         className="absolute h-full w-full object-cover inset-0"
       />
       <img
-        src="https://api.builder.io/api/v1/image/assets/8914166e909b4d6f993fbcf0a4c8521a/f2ff408a68bf4437aef96475bacc6105156d6602?placeholderIfAbsent=true"
+        src="/images/main-hero-content.png"
         alt="Hero content"
         className="aspect-[1.74] object-contain w-full rounded-[44px] max-md:max-w-full"
       />
