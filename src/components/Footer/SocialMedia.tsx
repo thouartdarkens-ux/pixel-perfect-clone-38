@@ -14,7 +14,7 @@ const SocialMedia: React.FC = () => {
         aria-label="Visit our social media profiles"
       >
         <img
-          src="https://api.builder.io/api/v1/image/assets/8914166e909b4d6f993fbcf0a4c8521a/09d8f8af9a7d5d0fb4cbb68c01ac5943741b3d02?placeholderIfAbsent=true"
+          src="/images/social-media-icons.png"
           className="aspect-[6.33] object-contain w-full max-w-[304px]"
           alt="Social media icons"
         />
