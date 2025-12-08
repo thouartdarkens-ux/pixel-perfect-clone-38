@@ -46,7 +46,20 @@ export const TestimonialsSection: React.FC = () => {
       className="flex flex-col relative min-h-[838px] overflow-hidden"
       aria-label="Customer testimonials"
     >
-      
+      <img
+        src="/images/testimonials-bg-1.png"
+        alt=""
+        className="absolute h-full w-full object-cover inset-0"
+        role="presentation"
+      />
+      <div className="flex flex-col relative min-h-[838px] w-full px-20 py-[158px] max-md:max-w-full max-md:px-5 max-md:py-[100px]">
+        <img
+          src="/images/testimonials-bg-2.png"
+          alt=""
+          className="absolute h-full w-full object-cover inset-0"
+          role="presentation"
+        />
+        
         <header className="relative flex items-stretch gap-2 mr-[232px] max-md:mr-2.5">
           <img
             src="/images/logo-brand-1.png"
