@@ -23,7 +23,7 @@ export function HeroSection({ }: HeroSectionProps) {
         className="aspect-[1.74] object-contain w-full rounded-[44px] max-md:max-w-full"
       />
       {/* Hero Content Overlay */}
-      <div className="absolute inset-0 flex flex-col items-center mt-[150px]">
+      <div className="absolute inset-0 flex flex-col items-center mt-[150px] max-md:mt-[200px]">
       <div className="text-center text-white z-10 px-6 max-w-4xl">
       <h1 className="text-7xl font-semibold leading-[101px] tracking-[-2.88px] max-md:max-w-full max-md:text-[40px] max-md:leading-[62px]">
           Your Campus{" "}
