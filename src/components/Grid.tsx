@@ -1,26 +1,23 @@
 import React from 'react';
 import { Featureboard } from './Featureboard';
+import { CreditCard, TrendingUp, Smartphone, Shield } from 'lucide-react';
 
 const features = [
   {
-    iconSrc: "/images/icon-payments.png",
-    title: "Optimize payments",
-    alt: "Payment optimization icon"
+    icon: CreditCard,
+    title: "Optimize payments"
   },
   {
-    iconSrc: "/images/icon-revenue.png",
-    title: "Grow your revenue",
-    alt: "Revenue growth icon"
+    icon: TrendingUp,
+    title: "Grow your revenue"
   },
   {
-    iconSrc: "/images/icon-mobile.png",
-    title: "Shop on the go",
-    alt: "Mobile shopping icon"
+    icon: Smartphone,
+    title: "Shop on the go"
   },
   {
-    iconSrc: "/images/icon-security.png",
-    title: "Put security first",
-    alt: "Security icon"
+    icon: Shield,
+    title: "Put security first"
   }
 ];
 
@@ -33,9 +30,8 @@ export const FeatureGrid: React.FC = () => {
       {features.map((feature, index) => (
         <Featureboard
           key={index}
-          iconSrc={feature.iconSrc}
+          icon={feature.icon}
           title={feature.title}
-          alt={feature.alt}
         />
       ))}
     </section>
