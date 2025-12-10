@@ -17,7 +17,8 @@ export const Header: React.FC = () => {
   }];
   return <header className="w-full max-md:max-w-full flex flex-col  items-center justify-center fixed top-0 z-50">
       <div className="bg-white flex w-full border-gray-200 border-solid border-2 max-w-[1440px] items-stretch gap-5 overflow-hidden flex-wrap justify-between px-[66px] rounded-xl max-md:max-w-full max-md:px-5">
-        <div className="flex items-center text-2xl text-black font-semibold whitespace-nowrap text-center leading-[101px]">
+        <div className="flex items-center gap-2 text-2xl text-black font-semibold whitespace-nowrap text-center leading-[101px]">
+          <img src="/images/hallway-logo.png" alt="Hallway logo" className="w-8 h-8" />
           <h1 className="self-stretch my-auto">
             Hallway
           </h1>

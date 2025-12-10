@@ -8,7 +8,8 @@ const CompanyInfo: React.FC = () => {
         student-first marketplace that makes it simple to buy, sell, and
         support projects — all in one place.
       </p>
-      <div className="flex items-center gap-1.5 text-2xl sm:text-[32px] text-black font-semibold whitespace-nowrap mt-4">
+      <div className="flex items-center gap-2 text-2xl sm:text-[32px] text-black font-semibold whitespace-nowrap mt-4">
+        <img src="/images/hallway-logo.png" alt="Hallway logo" className="w-8 h-8" />
         <div>Hallway</div>
       </div>
     </div>
