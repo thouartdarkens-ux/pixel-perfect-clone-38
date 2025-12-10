@@ -8,7 +8,7 @@ export const CopyrightFooter: React.FC = () => {
           <img src="/images/hallway-logo.png" alt="Hallway logo" className="w-6 h-6" />
           <span>Hallway</span>
         </div>
-        <div className="sm:text-right">© Grant Reese Arthur HW2025</div>
+        <div className="sm:text-right">© 2025 Hallway Technologies Ltd. All Rights Reserved.</div>
       </div>
     </footer>
   );
