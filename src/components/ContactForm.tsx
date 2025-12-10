@@ -70,7 +70,7 @@ export function ContactForm() {
                   </div>
                   <div>
                     <p className="font-medium">Email</p>
-                    <p className="text-gray-600">hello@example.com</p>
+                    <p className="text-gray-600">services@hallway.africa</p>
                   </div>
                 </div>
                 
@@ -80,7 +80,7 @@ export function ContactForm() {
                   </div>
                   <div>
                     <p className="font-medium">Phone</p>
-                    <p className="text-gray-600">+1 (555) 123-4567</p>
+                    <p className="text-gray-600">+233 20 049 6234</p>
                   </div>
                 </div>
                 
@@ -89,8 +89,8 @@ export function ContactForm() {
                     <span className="text-purple-600 font-semibold">📍</span>
                   </div>
                   <div>
-                    <p className="font-medium">Office</p>
-                    <p className="text-gray-600">123 Business Ave, Suite 100<br />City, State 12345</p>
+                    <p className="font-medium">Office (HQ)</p>
+                    <p className="text-gray-600">Greater Accra, Ghana</p>
                   </div>
                 </div>
               </CardContent>
