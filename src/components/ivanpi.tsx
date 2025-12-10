@@ -6,7 +6,7 @@ function ivanpi() {
   return (
     <div className="flex flex-col items-center px-4 py-8 max-w-7xl mx-auto">
         <FullPicture
-          badgeIcon="/images/badge-icon.png"
+          badgeIcon="/images/why-hallway-icon.png"
           badgeText="Why Hallway"
           title="Your Marketplace, Built for Students Who Want More Than Just "
           highlightedWord="Shopping"
