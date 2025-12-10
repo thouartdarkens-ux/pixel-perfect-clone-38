@@ -8,6 +8,26 @@ const CompanyInfo: React.FC = () => {
         student-first marketplace that makes it simple to buy, sell, and
         support projects — all in one place.
       </p>
+      
+      <div className="mt-6 space-y-2 text-[rgba(148,154,169,1)] text-sm sm:text-base">
+        <p>
+          <span className="font-medium text-foreground">Email:</span>{" "}
+          <a href="mailto:services@hallway.africa" className="hover:text-primary transition-colors">
+            services@hallway.africa
+          </a>
+        </p>
+        <p>
+          <span className="font-medium text-foreground">Phone:</span>{" "}
+          <a href="tel:+233200496234" className="hover:text-primary transition-colors">
+            +233 20 049 6234
+          </a>
+        </p>
+        <p>
+          <span className="font-medium text-foreground">Office (HQ):</span>{" "}
+          Greater Accra, Ghana
+        </p>
+      </div>
+      
       <div className="flex items-center gap-2 text-2xl sm:text-[32px] text-black font-semibold whitespace-nowrap mt-4">
         <img src="/images/hallway-logo.png" alt="Hallway logo" className="w-8 h-8" />
         <div>Hallway</div>
