@@ -8,7 +8,7 @@ const Copyright: React.FC = () => {
           <img src="/images/hallway-logo.png" alt="Hallway logo" className="w-6 h-6" />
           <span>Hallway</span>
         </div>
-        <div className="text-right">© Grant Reese Arthur HW2025</div>
+        <div className="text-right">© 2025 Hallway Technologies Ltd. All Rights Reserved.</div>
       </div>
     </footer>
   );
