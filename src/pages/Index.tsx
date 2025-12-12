@@ -5,7 +5,7 @@ import { ContactForm } from "@/components/ContactForm";
 import { FeaturesSection } from "@/components/FeaturesSection";
 import Footer from "@/components/Footer";
 import { Header } from "@/components/Header";
-import { Navigation } from "@/components/Navigation";
+
 import Ivanpi from "@/components/ivanpi";
 import { Herotroy } from "@/components/Hertroy";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
