@@ -6,7 +6,7 @@ export const CopyrightFooter: React.FC = () => {
       <div className="bg-white border flex items-center gap-4 flex-col sm:flex-row justify-between px-4 sm:px-[17px] py-4 sm:py-[23px] rounded-xl sm:rounded-2xl border-[rgba(224,231,245,1)] border-solid text-center sm:text-left">
         <div className="flex items-center gap-2">
           <img src="/images/hallway-logo.png" alt="Hallway logo" className="w-6 h-6" />
-          <span>Hallway</span>
+          
         </div>
         <div className="sm:text-right">© 2025 Hallway Technologies Ltd. All Rights Reserved.</div>
       </div>
