@@ -5,7 +5,7 @@ const testimonials = [{
   heading: "KNUST",
   quote: "\"Hallway excites me because it tackles the biggest challenge student entrepreneurs face-visibility. As a graduate who built a business on campus, I believe Hallway will make earning and growing a brand easier. Supporting this youth-driven vision early was natural because it empowers students to succeed.\"",
   authorName: "Bernard Essel",
-  authorTitle: "RTA, Telecommunication Engineering | Entrepreneur",
+  authorTitle: "RTA, Telecom Eng",
   authorAvatar: "/images/WhatsApp Image 2025-12-13 at 10.16.16_3ff6cd3f.jpg",
   className: "mt-[100px] max-md:mt-10"
 }, {
