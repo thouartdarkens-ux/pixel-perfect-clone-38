@@ -8,6 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { toast } from "sonner";
+import { Mail, Phone, Building2 } from "lucide-react";
 
 const contactSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
@@ -66,7 +67,7 @@ export function ContactForm() {
               <CardContent className="space-y-6">
                 <div className="flex items-center space-x-3">
                   <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
-                    <span className="text-blue-600 font-semibold">📧</span>
+                    <Mail className="w-5 h-5 text-blue-600" />
                   </div>
                   <div>
                     <p className="font-medium">Email</p>
@@ -76,7 +77,7 @@ export function ContactForm() {
                 
                 <div className="flex items-center space-x-3">
                   <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
-                    <span className="text-green-600 font-semibold">📞</span>
+                    <Phone className="w-5 h-5 text-green-600" />
                   </div>
                   <div>
                     <p className="font-medium">Phone</p>
@@ -86,7 +87,7 @@ export function ContactForm() {
                 
                 <div className="flex items-center space-x-3">
                   <div className="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center">
-                    <span className="text-purple-600 font-semibold">📍</span>
+                    <Building2 className="w-5 h-5 text-purple-600" />
                   </div>
                   <div>
                     <p className="font-medium">Office (HQ)</p>
