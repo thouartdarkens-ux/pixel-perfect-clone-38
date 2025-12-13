@@ -11,8 +11,8 @@ const testimonials = [{
 }, {
   id: 2,
   heading: "Excellence!",
-  quote: "\"As a small business owner, keeping track of expenses used to be a nightmare. This platform has streamlined everything for me, from invoicing to managing cash flow. It's a must-have tool for anyone serious about their business!\"",
-  authorName: "James D.",
+  quote: "\"I'm Naa Deide Tagoe, a student at the University of Cape Coast. I'm really excited about Hallway because it feels like something made for us by people who understand student life. It is more than just a platform. It is a chance to grow, socialize and earn. I believe it will open doors for many of us in simple but powerful ways.\"",
+  authorName: "Naa D Tagoe",
   authorTitle: "Entrepreneur",
   authorAvatar: "/images/avatar-james.png",
   className: "max-md:mt-5"
