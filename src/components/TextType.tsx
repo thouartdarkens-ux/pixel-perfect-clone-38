@@ -22,6 +22,8 @@ interface TextTypeProps {
   onSentenceComplete?: (sentence: string, index: number) => void;
   startOnVisible?: boolean;
   reverseMode?: boolean;
+  highlightWords?: string[];
+  highlightColor?: string;
 }
 
 const TextType = ({
@@ -43,6 +45,8 @@ const TextType = ({
   onSentenceComplete,
   startOnVisible = false,
   reverseMode = false,
+  highlightWords = [],
+  highlightColor = 'rgba(96,64,7,1)',
   ...props
 }: TextTypeProps & React.HTMLAttributes<HTMLElement>) => {
   const [displayedText, setDisplayedText] = useState('');
@@ -170,6 +174,33 @@ const TextType = ({
   const shouldHideCursor =
     hideCursorWhileTyping && (currentCharIndex < textArray[currentTextIndex].length || isDeleting);
 
+  const renderHighlightedText = (text: string) => {
+    if (highlightWords.length === 0) {
+      return <span style={{ color: getCurrentTextColor() || 'inherit' }}>{text}</span>;
+    }
+
+    const regex = new RegExp(`(${highlightWords.join('|')})`, 'gi');
+    const parts = text.split(regex);
+
+    return (
+      <>
+        {parts.map((part, index) => {
+          const isHighlight = highlightWords.some(
+            word => word.toLowerCase() === part.toLowerCase()
+          );
+          return (
+            <span
+              key={index}
+              style={{ color: isHighlight ? highlightColor : (getCurrentTextColor() || 'inherit') }}
+            >
+              {part}
+            </span>
+          );
+        })}
+      </>
+    );
+  };
+
   return createElement(
     Component,
     {
@@ -177,8 +208,8 @@ const TextType = ({
       className: `inline-block whitespace-pre-wrap tracking-tight ${className}`,
       ...props
     },
-    <span className="inline" style={{ color: getCurrentTextColor() || 'inherit' }}>
-      {displayedText}
+    <span className="inline">
+      {renderHighlightedText(displayedText)}
     </span>,
     showCursor && (
       <span
