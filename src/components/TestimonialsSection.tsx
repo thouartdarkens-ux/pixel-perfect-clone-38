@@ -13,7 +13,7 @@ const testimonials = [{
   heading: "UCC",
   quote: "\"I'm Naa Deide Tagoe, a student at the University of Cape Coast. I'm really excited about Hallway because it feels like something made for us by people who understand student life. It is more than just a platform. It is a chance to grow, socialize and earn. I believe it will open doors for many of us in simple but powerful ways.\"",
   authorName: "Naa D Tagoe",
-  authorTitle: "Entrepreneur",
+  authorTitle: "Student",
   authorAvatar: "/images/WhatsApp Image 2025-12-13 at 10.17.33_650fcc24.jpg",
   className: "max-md:mt-5"
 }, {
