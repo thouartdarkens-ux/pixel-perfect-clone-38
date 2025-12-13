@@ -1,12 +1,11 @@
 import * as React from "react";
-import { Button } from "@/components/ui/button";
 import CountdownTimer from "./Footer/CountdownTimer";
 import EmailSignup from "./Footer/EmailSignup";
+import TextType from "./TextType";
 
 interface HeroSectionProps {
   title?: string;
   subtitle?: string;
-
 }
 
 export function HeroSection({ }: HeroSectionProps) {
@@ -24,24 +23,29 @@ export function HeroSection({ }: HeroSectionProps) {
       />
       {/* Hero Content Overlay */}
       <div className="absolute inset-0 flex flex-col items-center mt-[150px] max-md:mt-[170px]">
-      <div className="text-center text-white z-10 px-6 max-w-4xl">
-      <h1 className="text-7xl font-semibold leading-[101px] tracking-[-2.88px] max-md:max-w-full max-md:text-[40px] max-md:leading-[62px]">
-          Your Campus{" "}
-          <span style={{
-            fontFamily: 'Beauty Swing Personal Use Only, -apple-system, Roboto, Helvetica, sans-serif',
-            fontWeight: 400,
-            color: 'rgba(96,64,7,1)'
-          }}>
-            Marketplace
-          </span>
-          , <br />
-          in Your Pocket.
-        </h1>
-        <p className="text-2xl">Launching on January 14 2028...</p>
-        
-      <div className="flex flex-col gap-1 justify-center items-center">
-      <CountdownTimer/>
-      <EmailSignup/>
+        <div className="text-center text-white z-10 px-6 max-w-4xl">
+          <h1 className="text-7xl font-semibold leading-[101px] tracking-[-2.88px] max-md:max-w-full max-md:text-[40px] max-md:leading-[62px] min-h-[220px]">
+            <TextType 
+              text={[
+                "Your Campus Marketplace, in Your Pocket.",
+                "Hallway is Coming",
+                "The Gateway to Wealth",
+                "Turns Your Passion to Profits",
+                "Empowers Student Entrepreneurs",
+                "Elevates Campus Commerce"
+              ]}
+              typingSpeed={75}
+              pauseDuration={1500}
+              showCursor={true}
+              cursorCharacter="|"
+              cursorClassName="text-[rgba(96,64,7,1)]"
+            />
+          </h1>
+          <p className="text-2xl">Launching on January 14 2028...</p>
+          
+          <div className="flex flex-col gap-1 justify-center items-center">
+            <CountdownTimer/>
+            <EmailSignup/>
           </div>
         </div>
       </div>
