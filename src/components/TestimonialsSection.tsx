@@ -3,9 +3,9 @@ import { TestimonialCard } from './TestimonialCard';
 const testimonials = [{
   id: 1,
   heading: "Highly recommend!",
-  quote: "\"I've tried several finance platforms, but this one is by far the best. The automated savings and investment features have helped me build a solid portfolio without even thinking about it. Highly recommend!\"",
-  authorName: "Emily R.",
-  authorTitle: "Investor",
+  quote: "\"Hallway excites me because it tackles the biggest challenge student entrepreneurs face-visibility. As a graduate who built a business on campus, I believe Hallway will make earning and growing a brand easier. Supporting this youth-driven vision early was natural because it empowers students to succeed.\"",
+  authorName: "Bernard Essel",
+  authorTitle: "RTA, Telecommunication Engineering | Entrepreneur",
   authorAvatar: "/images/avatar-emily.png",
   className: "mt-[100px] max-md:mt-10"
 }, {
