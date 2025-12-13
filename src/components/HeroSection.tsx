@@ -23,8 +23,8 @@ export function HeroSection({ }: HeroSectionProps) {
       />
       {/* Hero Content Overlay */}
       <div className="absolute inset-0 flex flex-col items-center mt-[150px] max-md:mt-[170px]">
-        <div className="text-center text-white z-10 px-6 max-w-4xl">
-          <h1 className="text-7xl font-semibold leading-[101px] tracking-[-2.88px] max-md:max-w-full max-md:text-[40px] max-md:leading-[62px] min-h-[220px]">
+        <div className="text-center text-white z-10 px-6 w-full max-w-[900px] mx-auto">
+          <h1 className="text-7xl font-semibold leading-[101px] tracking-[-2.88px] max-md:text-[40px] max-md:leading-[62px] min-h-[220px] max-md:min-h-[180px]">
             <TextType 
               text={[
                 "Your Campus Marketplace, in Your Pocket.",
@@ -39,6 +39,8 @@ export function HeroSection({ }: HeroSectionProps) {
               showCursor={true}
               cursorCharacter="|"
               cursorClassName="text-[rgba(96,64,7,1)]"
+              highlightWords={["Marketplace", "Hallway", "Gateway", "Passion", "Empowers"]}
+              highlightColor="rgba(96,64,7,1)"
             />
           </h1>
           <p className="text-2xl">Launching on January 14 2028...</p>
