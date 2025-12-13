@@ -11,7 +11,7 @@ interface HeroSectionProps {
 
 export function HeroSection({ }: HeroSectionProps) {
   return (
-    <section className="flex flex-col relative min-h-[1104px] w-full overflow-hidden rounded-[44px] max-md:max-w-full mt-16 max-md:mt-20">
+    <section className="flex flex-col relative min-h-[1104px] w-full overflow-hidden rounded-[44px] max-md:max-w-full">
       <img
         src="/images/main-hero-bg.png"
         alt="Hero background"
