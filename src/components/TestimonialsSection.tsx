@@ -2,7 +2,7 @@ import React from 'react';
 import { TestimonialCard } from './TestimonialCard';
 const testimonials = [{
   id: 1,
-  heading: "Highly recommend!",
+  heading: "KNUST",
   quote: "\"Hallway excites me because it tackles the biggest challenge student entrepreneurs face-visibility. As a graduate who built a business on campus, I believe Hallway will make earning and growing a brand easier. Supporting this youth-driven vision early was natural because it empowers students to succeed.\"",
   authorName: "Bernard Essel",
   authorTitle: "RTA, Telecommunication Engineering | Entrepreneur",
@@ -10,11 +10,11 @@ const testimonials = [{
   className: "mt-[100px] max-md:mt-10"
 }, {
   id: 2,
-  heading: "Excellence!",
+  heading: "UCC",
   quote: "\"I'm Naa Deide Tagoe, a student at the University of Cape Coast. I'm really excited about Hallway because it feels like something made for us by people who understand student life. It is more than just a platform. It is a chance to grow, socialize and earn. I believe it will open doors for many of us in simple but powerful ways.\"",
   authorName: "Naa D Tagoe",
   authorTitle: "Entrepreneur",
-  authorAvatar: "/images/avatar-james.png",
+  authorAvatar: "/images/WhatsApp Image 2025-12-13 at 10.17.33_650fcc24.jpg",
   className: "max-md:mt-5"
 }, {
   id: 3,
