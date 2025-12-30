@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { toast } from 'sonner';
+import { Loader2 } from 'lucide-react';
 
 const EmailSignup: React.FC = () => {
   const [email, setEmail] = useState('');
@@ -57,7 +58,10 @@ const EmailSignup: React.FC = () => {
           disabled={isSubmitting}
           className="bg-[rgba(46,32,6,1)] w-full sm:w-auto text-sm sm:text-base text-center leading-none px-6 sm:px-[33px] py-4 sm:py-[22px] rounded-xl sm:rounded-[100px] hover:bg-[rgba(56,42,16,1)] transition-colors disabled:opacity-50"
         >
-          <div>{isSubmitting ? 'Joining...' : 'Join The Waitlist'}</div>
+          <div className="flex items-center justify-center gap-2">
+            {isSubmitting && <Loader2 className="w-4 h-4 animate-spin" />}
+            {isSubmitting ? 'Joining...' : 'Join The Waitlist'}
+          </div>
         </button>
       </div>
     </form>
