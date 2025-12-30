@@ -45,7 +45,7 @@ const EmailSignup: React.FC = () => {
 
   return (
     <form onSubmit={handleSubmit} className="w-full max-w-[560px] px-4 sm:px-0">
-      <div className="flex flex-col gap-3 mt-6 sm:mt-[37px]">
+      <div className="flex flex-col gap-2 mt-4 sm:mt-5">
         <div className="bg-[rgba(255,255,255,0.33)] border flex w-full items-center gap-2 sm:gap-5 text-white font-normal flex-col sm:flex-row p-2 sm:pl-[29px] sm:pr-[9px] sm:py-[9px] rounded-2xl sm:rounded-[100px] border-white border-solid">
           <input
             type="email"
