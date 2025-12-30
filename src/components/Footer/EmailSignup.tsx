@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { toast } from 'sonner';
 
 const EmailSignup: React.FC = () => {
   const [email, setEmail] = useState('');
@@ -8,18 +9,35 @@ const EmailSignup: React.FC = () => {
     e.preventDefault();
     
     if (!email || !email.includes('@')) {
-      alert('Please enter a valid email address');
+      toast.error('Please enter a valid email address');
       return;
     }
 
     setIsSubmitting(true);
     
-    // Simulate API call
-    setTimeout(() => {
-      alert('Thank you for joining our waitlist!');
-      setEmail('');
+    try {
+      const response = await fetch('https://ttxsgqrnhhsuuhkwzpak.supabase.co/functions/v1/waitlist-signup', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'x-api-key': '9a336fa0-abd7-4f3c-b450-4100b8124829'
+        },
+        body: JSON.stringify({ email, referral_code: '' })
+      });
+
+      if (response.ok) {
+        toast.success('Thank you for joining our waitlist!');
+        setEmail('');
+      } else {
+        const errorData = await response.json().catch(() => ({}));
+        toast.error(errorData.message || 'Failed to join waitlist. Please try again.');
+      }
+    } catch (error) {
+      console.error('Waitlist signup error:', error);
+      toast.error('Something went wrong. Please try again.');
+    } finally {
       setIsSubmitting(false);
-    }, 1000);
+    }
   };
 
   return (
