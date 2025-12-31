@@ -43,7 +43,7 @@ export function HeroSection({ }: HeroSectionProps) {
               highlightColor="rgba(96,64,7,1)"
             />
           </h1>
-          <p className="text-2xl">Launching on January 14 2028...</p>
+          <p className="text-2xl">Launching on January 14, 2026...</p>
           
           <div className="flex flex-col gap-1 justify-center items-center">
             <CountdownTimer/>
