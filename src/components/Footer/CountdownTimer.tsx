@@ -6,46 +6,39 @@ interface TimeUnit {
 }
 
 const CountdownTimer: React.FC = () => {
-  const [timeLeft, setTimeLeft] = useState<TimeUnit[]>([
-    { value: 140, label: 'Days' },
-    { value: 1, label: 'Hrs' },
-    { value: 34, label: 'Mins' },
-    { value: 29, label: 'Secs' }
-  ]);
+  const targetDate = new Date('2026-01-14T00:00:00');
+
+  const calculateTimeLeft = (): TimeUnit[] => {
+    const now = new Date();
+    const difference = targetDate.getTime() - now.getTime();
+
+    if (difference <= 0) {
+      return [
+        { value: 0, label: 'Days' },
+        { value: 0, label: 'Hrs' },
+        { value: 0, label: 'Mins' },
+        { value: 0, label: 'Secs' }
+      ];
+    }
+
+    const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+    return [
+      { value: days, label: 'Days' },
+      { value: hours, label: 'Hrs' },
+      { value: minutes, label: 'Mins' },
+      { value: seconds, label: 'Secs' }
+    ];
+  };
+
+  const [timeLeft, setTimeLeft] = useState<TimeUnit[]>(calculateTimeLeft());
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setTimeLeft(prevTime => {
-        const newTime = [...prevTime];
-        
-        // Decrement seconds
-        if (newTime[3].value > 0) {
-          newTime[3].value -= 1;
-        } else {
-          newTime[3].value = 59;
-          
-          // Decrement minutes
-          if (newTime[2].value > 0) {
-            newTime[2].value -= 1;
-          } else {
-            newTime[2].value = 59;
-            
-            // Decrement hours
-            if (newTime[1].value > 0) {
-              newTime[1].value -= 1;
-            } else {
-              newTime[1].value = 23;
-              
-              // Decrement days
-              if (newTime[0].value > 0) {
-                newTime[0].value -= 1;
-              }
-            }
-          }
-        }
-        
-        return newTime;
-      });
+      setTimeLeft(calculateTimeLeft());
     }, 1000);
 
     return () => clearInterval(timer);
