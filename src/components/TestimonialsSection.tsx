@@ -29,7 +29,7 @@ const testimonials = [{
   heading: "UENR",
   quote: "\"What drew me to Hallway is the vision behind it. It’s not just about making money, it’s about helping students realize they don’t have to wait until after graduation to start building something meaningful. Hallway creates that bridge between campus life and real opportunities, and I believe it will redefine how students grow financially and professionally.\"",
   authorName: "Cariel S.",
-  authorTitle: "Role Student",
+  authorTitle: "Student",
   authorAvatar: "/images/avatar-james.png",
   className: "max-md:mt-5"
 }];
