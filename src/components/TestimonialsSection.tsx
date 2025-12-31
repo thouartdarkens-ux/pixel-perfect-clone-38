@@ -18,9 +18,9 @@ const testimonials = [{
   className: "max-md:mt-5"
 }, {
   id: 3,
-  heading: "Impressive!",
-  quote: "\"This platform has been a game-changer for my family's finances. We've been able to set and meet savings goals, track expenses, and plan for the future with ease. It's made financial planning stress-free.\"",
-  authorName: "David P",
+  heading: "UG",
+  quote: "\"Hallway is exactly what students like me have been waiting for. The idea of being able to earn, build skills, and connect with opportunities right on campus is something that can genuinely change how students approach life in school. I’m excited to be part of this journey and can’t wait to use the platform when it launches..\"",
+  authorName: "J.N.Beresie",
   authorTitle: "Tech Professional",
   authorAvatar: "/images/avatar-james.png",
   className: "mt-[100px] max-md:mt-10"
