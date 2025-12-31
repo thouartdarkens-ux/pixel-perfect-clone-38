@@ -26,10 +26,10 @@ const testimonials = [{
   className: "mt-[100px] max-md:mt-10"
 }, {
   id: 4,
-  heading: "Amazing work",
-  quote: "\"This platform has completely transformed the way I manage my finances. The intuitive interface makes budgeting, investing, and tracking expenses effortless. I've never felt more in control of my financial future!\"",
-  authorName: "David Gilmour",
-  authorTitle: "CEO Film Project",
+  heading: "UENR",
+  quote: "\"What drew me to Hallway is the vision behind it. It’s not just about making money, it’s about helping students realize they don’t have to wait until after graduation to start building something meaningful. Hallway creates that bridge between campus life and real opportunities, and I believe it will redefine how students grow financially and professionally.\"",
+  authorName: "Cariel S.",
+  authorTitle: "Role Student",
   authorAvatar: "/images/avatar-james.png",
   className: "max-md:mt-5"
 }];
