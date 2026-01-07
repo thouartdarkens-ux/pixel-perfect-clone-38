@@ -61,9 +61,9 @@ export const FeaturesSection: React.FC = () => {
                       <FeatureCard
                         icon="https://api.builder.io/api/v1/image/assets/8914166e909b4d6f993fbcf0a4c8521a/2e452d8f71f75a0de8bc46c8caf1e4c831e70a3b?placeholderIfAbsent=true"
                         title="Empower Student Projects"
-                        description="Turn ideas into reality with support from your peers and community."
+                        description="Turn student ideas, skills, and side hustles into real projects with support from your campus community."
                         statNumber="10k+"
-                        statLabel="Projects On Board"
+                        statLabel="Students on the waitlist for softlife"
                         statIcon="https://api.builder.io/api/v1/image/assets/8914166e909b4d6f993fbcf0a4c8521a/f04712b1db03043fe903d0b514d0f4b4f35a10a9?placeholderIfAbsent=true"
                       />
                     </div>
@@ -71,9 +71,9 @@ export const FeaturesSection: React.FC = () => {
                       <FeatureCard
                         icon="https://api.builder.io/api/v1/image/assets/8914166e909b4d6f993fbcf0a4c8521a/b2befdf6eeffff01f53c11644088426defac440e?placeholderIfAbsent=true"
                         title="Build a Student-First Marketplace"
-                        description="Safe, affordable, and made for the campus ecosystem."
-                        statNumber="24K+"
-                        statLabel="User Around The World"
+                        description="A safe, affordable marketplace designed specifically for students to have a peer connection in commerce and collaboration."
+                        statNumber="600K+"
+                        statLabel="Students across major campuses in Ghana alone"
                         statIcon="https://api.builder.io/api/v1/image/assets/8914166e909b4d6f993fbcf0a4c8521a/e7772a6ea55159fa22d5668322b7e8f0b15b0d5c?placeholderIfAbsent=true"
                         variant="highlighted"
                         className="max-md:mt-[5px]"
@@ -86,9 +86,9 @@ export const FeaturesSection: React.FC = () => {
                 <FeatureCard
                   icon="https://api.builder.io/api/v1/image/assets/8914166e909b4d6f993fbcf0a4c8521a/7db58ba439145eec9fddd710174b089451e04146?placeholderIfAbsent=true"
                   title="Create Opportunities to Earn"
-                  description="Give students an easy way to sell, showcase, and grow their ventures."
-                  statNumber="24K+"
-                  statLabel="Opportunities created"
+                  description="Give students a simple way to showcase their skills, sell products, offer services, and earn income while studying."
+                  statNumber="1M+"
+                  statLabel="Student Opportunities Enabled by 2030"
                   statIcon="https://api.builder.io/api/v1/image/assets/8914166e909b4d6f993fbcf0a4c8521a/f04712b1db03043fe903d0b514d0f4b4f35a10a9?placeholderIfAbsent=true"
                   className="max-md:mt-3"
                 />
