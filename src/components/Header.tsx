@@ -9,8 +9,8 @@ import {
 export const Header: React.FC = () => {
   const navigationItems = [
     { id: 'Home', label: 'Home', href: 'https://demo.hallway.africa' },
-    { id: 'Volunteer', label: 'Become A Volunteer', href: 'https://demo.hallway.africa/volunteer' },
-    { id: 'Vendor', label: 'Become A Vendor', href: 'https://demo.hallway.africa/vendor' }
+    { id: 'Volunteer', label: 'Become A Volunteer', href: 'https://volunteer.hallway.africa/' },
+    { id: 'Vendor', label: 'Become A Vendor', href: 'https://forms.gle/z1RdD9P7Rc6oNq2C7' }
   ];
 
   const secondaryLinks = [
