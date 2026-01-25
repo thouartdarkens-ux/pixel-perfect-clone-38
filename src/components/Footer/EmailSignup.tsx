@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { toast } from 'sonner';
 import { Loader2 } from 'lucide-react';
 
@@ -6,6 +6,15 @@ const EmailSignup: React.FC = () => {
   const [email, setEmail] = useState('');
   const [referralCode, setReferralCode] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  // Parse URL for referral code on mount
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const referenc = urlParams.get('referenc');
+    if (referenc) {
+      setReferralCode(referenc);
+    }
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
