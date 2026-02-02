@@ -1,5 +1,6 @@
 import React from 'react';
 import { Menu } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import {
   Sheet,
   SheetContent,
@@ -7,8 +8,7 @@ import {
 } from '@/components/ui/sheet';
 
 export const Header: React.FC = () => {
-  const navigationItems = [
-    { id: 'Home', label: 'Home', href: 'https://demo.hallway.africa' },
+  const externalLinks = [
     { id: 'Volunteer', label: 'Become A Volunteer', href: 'https://volunteer.hallway.africa/' },
     { id: 'Vendor', label: 'Become A Vendor', href: 'https://forms.gle/z1RdD9P7Rc6oNq2C7' }
   ];
@@ -30,7 +30,13 @@ export const Header: React.FC = () => {
         
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8 text-base text-[#576974] font-medium">
-          {navigationItems.map((item) => (
+          <Link
+            to="/"
+            className="transition-colors hover:text-[rgba(96,64,7,1)]"
+          >
+            Home
+          </Link>
+          {externalLinks.map((item) => (
             <a
               key={item.id}
               href={item.href}
@@ -69,7 +75,13 @@ export const Header: React.FC = () => {
               </div>
               
               <nav className="flex flex-col gap-4">
-                {navigationItems.map((item) => (
+                <Link
+                  to="/"
+                  className="text-base text-[#576974] font-medium transition-colors hover:text-[rgba(96,64,7,1)]"
+                >
+                  Home
+                </Link>
+                {externalLinks.map((item) => (
                   <a
                     key={item.id}
                     href={item.href}
