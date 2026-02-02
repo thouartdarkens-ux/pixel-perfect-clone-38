@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const NavigationLinks: React.FC = () => {
   const handleNavClick = (section: string) => {
@@ -31,6 +32,12 @@ const NavigationLinks: React.FC = () => {
       >
         Join The Waitlist
       </button>
+      <Link 
+        to="/privacy-policy"
+        className="mt-3 sm:mt-[35px] text-center sm:text-left hover:text-[rgba(96,64,7,1)] transition-colors"
+      >
+        Privacy Policy
+      </Link>
     </nav>
   );
 };
