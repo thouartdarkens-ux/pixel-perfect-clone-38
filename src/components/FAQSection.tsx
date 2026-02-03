@@ -4,25 +4,29 @@ import { FAQItem } from './FAQItem';
 
 const faqData = [
   {
-    question: "Who can become a vendor on Hallway?",
-    answer: "Anyone! Whether you're a student with a small side hustle or a business owner looking to reach the student market, Hallway is open to all vendors who want to sell products directly to students.",
+    question: "What is Hallway?",
+    answer: "Hallway is a student-focused freelance and e-commerce platform that allows students to monetize their skills, sell products, and offer services online. It's built by students, for students, making it easy to connect with peers and start earning while studying.",
     isInitiallyOpen: true
   },
   {
-    question: "How do I sign up as a vendor?",
-    answer: ""
+    question: "How can students earn on Hallway?",
+    answer: "Students can earn by offering freelance services, selling digital or physical products, and completing gigs posted by other students or businesses. Hallway also provides a secure platform for managing payments and tracking your earnings."
   },
   {
-    question: "Are there any fees for selling on Hallway?",
-    answer: ""
+    question: "Is Hallway free for students?",
+    answer: "Yes! Signing up and joining Hallway is completely free for all students."
   },
   {
-    question: "How do I get paid?",
-    answer: ""
+    question: "Can I sell both digital and physical products on Hallway?",
+    answer: "Absolutely! Hallway allows students to sell digital products like designs, documents, or tutorials, as well as physical products like books, gadgets, or handmade items."
   },
   {
-    question: "What kind of products can I sell?",
-    answer: ""
+    question: "Who can join Hallway?",
+    answer: "Hallway is designed specifically for students and recent graduates. Anyone enrolled in a university or educational institution can sign up and start offering their skills or products."
+  },
+  {
+    question: "How do I get paid on Hallway?",
+    answer: "Payments are securely processed through the platform. Students can link their bank accounts or mobile wallets to receive immediate payouts from their sales or completed freelance gigs."
   }
 ];
 
